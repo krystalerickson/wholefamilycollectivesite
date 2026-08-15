@@ -338,23 +338,30 @@ section.tinted { background: #EFEAE0; }
   .card-grid.icons-6 { grid-template-columns: 1fr; }
 }
 
-/* Values grid */
+/* Values list */
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 .value-card {
   background: #fff;
-  border-top: 4px solid var(--teal);
+  border-left: 5px solid var(--teal);
   border-radius: 10px;
-  padding: 22px;
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-.value-card:nth-child(2n) { border-top-color: var(--coral); }
-.value-card:nth-child(3n) { border-top-color: var(--purple); }
-.value-card:nth-child(4n) { border-top-color: var(--gold); }
+.value-card .icon-badge { margin-bottom: 0; }
+.value-card h3 { margin-bottom: 4px; }
+.value-card p { margin-bottom: 0; font-size: 0.92rem; }
+
+@media (max-width: 600px) {
+  .value-card { flex-direction: column; align-items: flex-start; }
+}
 
 /* Team */
 .team-grid {
