@@ -356,7 +356,14 @@ section.tinted { background: #EFEAE0; }
 }
 
 .value-card .icon-badge { margin-bottom: 0; }
-.value-card h3 { margin-bottom: 4px; }
+.value-card h3 { margin-bottom: 2px; }
+.value-card .value-lead {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--coral);
+  margin: 0 0 6px;
+  font-size: 0.92rem;
+}
 .value-card p { margin-bottom: 0; font-size: 0.92rem; }
 
 @media (max-width: 600px) {
