@@ -152,14 +152,6 @@ nav.main-nav a.active {
 
 .hero h1 { color: var(--gold); max-width: 780px; margin-top: 8px; margin-bottom: 14px; }
 
-.hero-lede {
-  font-size: 1.2rem;
-  font-weight: 500;
-  max-width: 700px;
-  color: var(--sage);
-  margin-bottom: 18px;
-}
-
 .hero p { color: #E7E4DC; max-width: 720px; }
 
 .hero-buttons { display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
