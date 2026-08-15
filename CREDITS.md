@@ -1,0 +1,23 @@
+# Photo Credits
+
+Images used on this site and their licensing. This file is for internal reference and is not published on the site itself.
+
+## images/hero-caregiver-reading.jpg
+Source: Images of Empowerment (imagesofempowerment.org)
+License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Attribution: Photo courtesy of Images of Empowerment (CC BY-NC 4.0)
+
+## images/caregiver-clinic.jpg
+Source: Images of Empowerment (imagesofempowerment.org) — APHRC Nairobi Korogocho Maternity Clinic
+License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Attribution: Photo courtesy of APHRC / Images of Empowerment (CC BY-NC 4.0)
+
+## images/family-community.jpg
+Source: Images of Empowerment (imagesofempowerment.org) — MSI Coastal Rabai
+License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+Attribution: Photo courtesy of MSI / Images of Empowerment (CC BY-NC 4.0)
+
+## images/unused-for-later/*.jpg
+Source: Unsplash, photographer Bennett Tobias
+License: Unsplash License (free for commercial use, no attribution required)
+Not currently used on the site — kept for potential future use (e.g. social media).
