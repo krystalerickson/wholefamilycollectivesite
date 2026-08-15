@@ -288,6 +288,7 @@ section.tinted { background: #EFEAE0; }
 
 .subsection-heading {
   color: var(--purple);
+  font-size: 1.05rem;
   margin-top: 48px;
   margin-bottom: 24px;
 }
