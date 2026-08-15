@@ -17,6 +17,12 @@ Source: Images of Empowerment (imagesofempowerment.org) — MSI Coastal Rabai
 License: Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 Attribution: Photo courtesy of MSI / Images of Empowerment (CC BY-NC 4.0)
 
+## images/caregiver-support-group.jpg
+AI-generated image (ChatGPT/DALL-E). Used on the site with a visible "Illustrative image" caption in the What We Do section. Not a photo of an actual Whole Family Collective program or session.
+
+## images/caregivers-playing.jpg, images/mother-and-child-blocks.jpg
+AI-generated images (ChatGPT/DALL-E). Not currently used on the site. If used in the future, must carry a visible "Illustrative image" caption per the same standard.
+
 ## images/unused-for-later/*.jpg
 Source: Unsplash, photographer Bennett Tobias
 License: Unsplash License (free for commercial use, no attribution required)

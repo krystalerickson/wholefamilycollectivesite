@@ -200,6 +200,15 @@ nav.main-nav a.active {
   display: block;
 }
 
+.photo-caption {
+  display: block;
+  font-size: 0.72rem;
+  font-style: italic;
+  color: var(--navy);
+  opacity: 0.55;
+  margin-top: 6px;
+}
+
 @media (max-width: 800px) {
   .section-photo-grid,
   .section-photo-grid.reverse { grid-template-columns: 1fr; }
