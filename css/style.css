@@ -74,7 +74,7 @@ header.site-header {
   color: var(--navy);
 }
 
-.brand img { height: 56px; width: auto; display: block; }
+.brand img { height: 46px; width: auto; display: block; }
 
 nav.main-nav ul {
   list-style: none;
