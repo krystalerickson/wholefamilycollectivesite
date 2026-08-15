@@ -276,6 +276,14 @@ section.tinted { background: #EFEAE0; }
   margin-bottom: 24px;
 }
 
+.subsection-block {
+  border-top: 2px solid rgba(108,99,182,0.25);
+  padding-top: 40px;
+  margin-top: 56px;
+}
+
+.subsection-block .subsection-heading { margin-top: 0; }
+
 .question-list {
   list-style: none;
   padding: 0;
