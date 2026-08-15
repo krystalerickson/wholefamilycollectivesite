@@ -147,15 +147,19 @@ nav.main-nav a.active {
   font-weight: 700;
   color: var(--gold);
   font-size: 0.85rem;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 }
 
-.hero h1 { color: #fff; max-width: 780px; }
+.hero h1 { color: #fff; max-width: 780px; margin-top: 4px; }
 
-.hero .lede {
-  font-size: 1.2rem;
+.hero-tagline {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
   max-width: 700px;
   color: var(--sage);
+  margin-bottom: 22px;
 }
 
 .hero p { color: #E7E4DC; max-width: 720px; }
@@ -273,6 +277,7 @@ section.tinted { background: #EFEAE0; }
   align-items: center;
   justify-content: center;
   margin-bottom: 14px;
+  flex-shrink: 0;
 }
 
 .icon-badge svg { width: 24px; height: 24px; }
@@ -283,7 +288,38 @@ section.tinted { background: #EFEAE0; }
 .icon-badge.purple { background: var(--purple); }
 .icon-badge.gold { background: var(--gold); }
 
-.card-grid.icons-6 .card { text-align: left; }
+/* Icon inline with heading (Head/Heart/Soul, promise items) */
+.card-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.card-heading-row .icon-badge { margin-bottom: 0; }
+.card-heading-row h3 { margin-bottom: 0; }
+
+/* We-strengthen-caregivers grid: 2 columns, compact rows */
+.card-grid.icons-6 {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card-grid.icons-6 .card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  text-align: left;
+}
+
+.card-grid.icons-6 .icon-badge { margin-bottom: 0; }
+.card-grid.icons-6 .card h3 { margin-bottom: 4px; }
+.card-grid.icons-6 .card p { margin-bottom: 0; font-size: 0.92rem; }
+
+@media (max-width: 640px) {
+  .card-grid.icons-6 { grid-template-columns: 1fr; }
+}
 
 /* Values grid */
 .values-grid {
@@ -350,9 +386,14 @@ section.tinted { background: #EFEAE0; }
   border-radius: 12px;
   padding: 20px 24px;
   border-left: 5px solid var(--teal);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
 }
 
-.promise-item strong { color: var(--navy); }
+.promise-item .icon-badge { margin-bottom: 0; margin-top: 2px; }
+.promise-item h3 { margin-bottom: 6px; }
+.promise-item p { margin-bottom: 0; }
 
 /* Join us / CTA band */
 .cta-band {
