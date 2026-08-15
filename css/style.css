@@ -150,7 +150,7 @@ nav.main-nav a.active {
   margin-bottom: 8px;
 }
 
-.hero h1 { color: var(--coral); max-width: 780px; margin-top: 4px; }
+.hero h1 { color: var(--gold); max-width: 780px; margin-top: 4px; }
 
 .hero-tagline {
   font-style: italic;
@@ -448,6 +448,16 @@ footer.site-footer .footer-top {
 footer.site-footer a { color: var(--sage); text-decoration: none; }
 footer.site-footer a:hover { color: var(--gold); }
 
+.footer-logo { height: 46px; width: auto; display: block; }
+
+.footer-tagline {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--sage);
+  margin-top: 12px;
+  white-space: nowrap;
+}
+
 footer.site-footer nav ul {
   list-style: none;
   padding: 0;
@@ -505,4 +515,8 @@ footer.site-footer nav ul {
     flex-direction: column;
     gap: 14px;
   }
+}
+
+@media (max-width: 480px) {
+  .footer-tagline { white-space: normal; }
 }
