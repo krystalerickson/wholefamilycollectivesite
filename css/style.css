@@ -357,6 +357,19 @@ section.tinted { background: #EFEAE0; }
 .card-heading-row .icon-badge { margin-bottom: 0; }
 .card-heading-row h3 { margin-bottom: 0; }
 
+/* Centered card variant (e.g. Core Focus Areas) */
+.card-grid.centered .card {
+  text-align: center;
+}
+
+.card-grid.centered .card-heading-row {
+  flex-direction: column;
+}
+
+.card-grid.centered .icon-badge {
+  margin: 0 auto 12px;
+}
+
 /* We-strengthen-caregivers grid: 2 columns, compact rows */
 .card-grid.icons-6 {
   grid-template-columns: repeat(2, 1fr);
