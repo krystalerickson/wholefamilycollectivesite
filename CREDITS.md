@@ -23,6 +23,11 @@ AI-generated image (ChatGPT/DALL-E). Used on the site with a visible "Illustrati
 ## images/caregivers-playing.jpg, images/mother-and-child-blocks.jpg
 AI-generated images (ChatGPT/DALL-E). Not currently used on the site. If used in the future, must carry a visible "Illustrative image" caption per the same standard.
 
+## images/mission-mother-child.jpg
+Source: Unsplash, photographer Moses Sichach
+License: Unsplash License (free for commercial use, no attribution required)
+Used on the Mission & Values page.
+
 ## images/unused-for-later/*.jpg
 Source: Unsplash, photographer Bennett Tobias
 License: Unsplash License (free for commercial use, no attribution required)
