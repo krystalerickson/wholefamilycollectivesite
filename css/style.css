@@ -222,6 +222,46 @@ nav.main-nav a.active {
   }
 }
 
+/* Stretch variant: true grid columns (not float) so a longer text block
+   isn't constrained by the image, and the image stays capped near its
+   native resolution so it doesn't blur from upscaling. */
+.section-photo-grid.stretch {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.section-photo-grid.stretch::after { content: none; }
+
+.section-photo-grid.stretch .section-photo {
+  float: none;
+  width: auto;
+  max-width: none;
+  margin: 0;
+}
+
+.section-photo-grid.stretch .section-photo img {
+  height: 400px;
+}
+
+.section-photo-grid.stretch.reverse {
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.section-photo-grid.stretch.reverse .section-photo {
+  order: 2;
+}
+
+@media (max-width: 700px) {
+  .section-photo-grid.stretch {
+    grid-template-columns: 1fr;
+  }
+  .section-photo-grid.stretch .section-photo img {
+    height: 260px;
+  }
+}
+
 /* Sections */
 section { padding: 64px 0; }
 section.alt { background: #fff; }
