@@ -586,7 +586,7 @@ footer.site-footer nav ul {
   padding: 56px 0;
   text-align: center;
 }
-.page-hero h1 { color: #fff; }
+.page-hero h1 { color: #fff; max-width: 700px; margin: 0 auto; }
 .page-hero p { color: var(--sage); max-width: 700px; margin: 0 auto; }
 
 .vm-block {
