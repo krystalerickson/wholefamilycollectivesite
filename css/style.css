@@ -426,6 +426,7 @@ section.tinted { background: #EFEAE0; }
   border-radius: 16px;
   padding: 30px;
   border: 1px solid rgba(13,59,59,0.08);
+  text-align: center;
 }
 
 .team-avatar {
