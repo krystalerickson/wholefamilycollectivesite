@@ -431,7 +431,7 @@ section.tinted { background: #EFEAE0; }
 
 .team-avatar {
   width: 220px;
-  height: 220px;
+  height: 300px;
   border-radius: 16px;
   margin: 0 auto 18px;
   overflow: hidden;
