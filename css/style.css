@@ -562,6 +562,7 @@ section.tinted { background: #EFEAE0; }
 
 .join-card h3 { color: var(--navy); }
 .join-card p { color: #4a4a5a; margin: 0; }
+.join-card .icon-badge { margin: 0 auto 14px; }
 
 /* Footer */
 footer.site-footer {
