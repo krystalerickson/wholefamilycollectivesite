@@ -407,7 +407,7 @@ section.tinted { background: #EFEAE0; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card-grid.centered .card-heading-row {
