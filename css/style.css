@@ -543,6 +543,7 @@ section.tinted { background: #EFEAE0; }
 }
 
 .cta-band h2 { color: #fff; }
+.cta-band .section-kicker { color: #fff; }
 .cta-band p { color: #EDECF7; max-width: 640px; margin-left: auto; margin-right: auto; }
 
 .join-grid {
