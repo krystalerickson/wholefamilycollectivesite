@@ -239,6 +239,13 @@ section.tinted { background: #EFEAE0; }
   margin-bottom: 10px;
 }
 
+.section-kicker.kicker-lg {
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
 /* Stats */
 .stats-grid {
   display: grid;
