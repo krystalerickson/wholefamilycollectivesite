@@ -237,6 +237,18 @@ section.tinted { background: #EFEAE0; }
 
 .text-center { text-align: center; }
 
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  gap: 6px;
+}
+.policy-list li {
+  font-weight: 600;
+  color: var(--navy);
+}
+
 .section-feature-photo {
   max-width: 560px;
   margin: 8px auto 40px;
