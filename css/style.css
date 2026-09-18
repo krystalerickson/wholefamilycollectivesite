@@ -260,7 +260,8 @@ section.tinted { background: #EFEAE0; }
   border-radius: 18px;
   display: block;
 }
-#where-we-work .section-intro { margin-bottom: 0; }
+#where-we-work .section-intro,
+#theory-of-change .section-intro { margin-bottom: 0; }
 
 .section-kicker {
   text-transform: uppercase;
