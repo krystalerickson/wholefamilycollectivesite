@@ -227,9 +227,42 @@ section { padding: 64px 0; }
 section.alt { background: #fff; }
 section.tinted { background: #EFEAE0; }
 
-.section-intro { margin-bottom: 40px; }
-.section-intro h2 { color: var(--teal); max-width: none; }
-.section-intro > p { max-width: 760px; }
+.section-intro {
+  margin: 0 auto 40px;
+  max-width: 760px;
+  text-align: center;
+}
+.section-intro h2 { color: var(--teal); max-width: none; font-weight: 700; font-size: clamp(1.25rem, 2.4vw, 1.65rem); }
+.section-intro > p { max-width: none; }
+
+.text-center { text-align: center; }
+
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  gap: 6px;
+}
+.policy-list li {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.section-feature-photo {
+  max-width: 560px;
+  margin: 8px auto 40px;
+}
+.section-feature-photo img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+}
+#where-we-work .section-intro,
+#theory-of-change .section-intro { margin-bottom: 0; }
+
 .section-kicker {
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -237,6 +270,14 @@ section.tinted { background: #EFEAE0; }
   color: var(--coral);
   font-size: 1.15rem;
   margin-bottom: 10px;
+}
+
+.section-kicker.kicker-lg {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 /* Stats */
@@ -258,7 +299,7 @@ section.tinted { background: #EFEAE0; }
 .stat-number {
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 2.6rem;
+  font-size: clamp(3rem, 7vw, 4.5rem);
   color: var(--gold);
   display: block;
   margin-bottom: 8px;
@@ -293,6 +334,18 @@ section.tinted { background: #EFEAE0; }
 
 .card h3 { margin-bottom: 10px; }
 
+.phase-tag {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 0.72rem;
+  margin: 14px 0 6px;
+}
+.phase-tag.phase-teal { color: var(--teal); }
+.phase-tag.phase-coral { color: var(--coral); }
+.phase-tag.phase-purple { color: var(--purple); }
+
 .subsection-heading {
   color: var(--purple);
   font-size: 1.05rem;
@@ -301,8 +354,8 @@ section.tinted { background: #EFEAE0; }
 }
 
 .subsection-block {
-  padding-top: 8px;
-  margin-top: 40px;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .subsection-block .subsection-heading { margin-top: 0; }
@@ -369,7 +422,7 @@ section.tinted { background: #EFEAE0; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card-grid.centered .card-heading-row {
@@ -505,6 +558,7 @@ section.tinted { background: #EFEAE0; }
 }
 
 .cta-band h2 { color: #fff; }
+.cta-band .section-kicker { color: #fff; }
 .cta-band p { color: #EDECF7; max-width: 640px; margin-left: auto; margin-right: auto; }
 
 .join-grid {
@@ -524,6 +578,7 @@ section.tinted { background: #EFEAE0; }
 
 .join-card h3 { color: var(--navy); }
 .join-card p { color: #4a4a5a; margin: 0; }
+.join-card .icon-badge { margin: 0 auto 14px; }
 
 /* Footer */
 footer.site-footer {
@@ -630,4 +685,72 @@ footer.site-footer nav ul {
 
 @media (max-width: 480px) {
   .footer-tagline { white-space: normal; }
+}
+
+/* Contact form */
+.contact-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.form-row {
+  margin-bottom: 22px;
+}
+
+.form-row label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.form-row .optional {
+  font-weight: 500;
+  color: rgba(13,59,59,0.55);
+  font-size: 0.82rem;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row select,
+.form-row textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(13,59,59,0.18);
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--navy);
+  background: #fff;
+}
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: var(--teal);
+  box-shadow: 0 0 0 3px rgba(31,165,154,0.15);
+}
+
+.form-row textarea { resize: vertical; }
+
+#contact-form .btn-primary {
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-thanks {
+  text-align: center;
+  padding: 24px 0;
+}
+.contact-thanks h2 { color: var(--teal); }
+
+.contact-direct {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 0.92rem;
+  color: rgba(13,59,59,0.7);
 }
