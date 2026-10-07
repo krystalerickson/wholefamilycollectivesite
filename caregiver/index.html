@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" href="../images/favicon-256.png">
-<title>Vision, Mission &amp; Values | Whole Family Collective</title>
-<meta name="description" content="Our vision, mission, and values at Whole Family Collective.">
+<title>I’m a caregiver | Whole Family Collective</title>
+<meta name="description" content="Caregivers in Nairobi, Kenya: tell us you are interested and we will be in touch.">
 <meta property="og:title" content="Whole Family Collective"><meta property="og:description" content="Stronger caregivers. Stronger families. Stronger futures."><meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 
@@ -17,30 +17,28 @@
 <a class="logo" href="../" aria-label="Whole Family Collective, home"><img src="../images/logo-horizontal.png" alt="Whole Family Collective" width="170" height="40"></a>
 <button id="mb" aria-expanded="false" aria-controls="nl">Menu</button>
 <nav aria-label="Main"><ul id="nl">
-<li><a href="../vision/" aria-current="page">Vision &amp; Values</a></li><li><a href="../team/">Team</a></li><li><a href="../learning/">Learning &amp; Impact</a></li>
+<li><a href="../vision/">Vision &amp; Values</a></li><li><a href="../team/">Team</a></li><li><a href="../learning/">Learning &amp; Impact</a></li>
 <li><a href="../contact/">Contact Us</a></li>
 <li><a class="cta" href="../caregiver/">I’m a caregiver</a></li></ul></nav>
 </div></header>
 
 <main id="main" tabindex="-1">
-<div class="w ph-head"><h1>Vision, Mission &amp; Values</h1></div>
+<div class="w ph-head"><h1>I’m a caregiver</h1></div>
 <section class="b"><div class="w">
-<p class="note">Our Vision</p>
-<p class="quote">A world where every family navigating developmental delays or disabilities has the knowledge, confidence, relationships, and resources to flourish through every stage of life.</p>
-<figure class="ph" style="aspect-ratio:16/9"><img src="../images/mission-mother-child.jpg" alt="A mother and her young child sharing a warm moment together" loading="lazy" onerror="this.remove()"></figure>
-<p class="note">Our Mission</p>
-<h2 style="font-size:clamp(1.5rem,4vw,2.3rem)">We empower caregivers of children with developmental delays and disabilities in Kenya through evidence-based interventions, community partnerships, and sustainable support systems that help families thrive.</h2>
+<p>We equip caregivers in Nairobi, Kenya with practical, evidence-based skills to support children with developmental delays or disabilities. Tell us you are interested and we will be in touch.</p>
+<div class="ctr"><div id="fb"><form action="https://formspree.io/f/mnpaedqv" method="POST">
+<input type="hidden" name="_subject" value="Caregiver interest (wholefamilycollective.org)">
+<input type="hidden" name="_next" value="https://wholefamilycollective.org/caregiver/?sent=true">
+<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Phone or email<input name="contact" required></label>
+<label>Where in Nairobi do you live? (optional)<input name="area"></label>
+<label>Anything you would like us to know (optional)<textarea name="message" rows="4"></textarea></label>
+<button class="btn" type="submit">Send</button></form></div>
+<div id="ty" class="card thanks" hidden><h3>Thank you!</h3><p>Thank you for your interest. We’ve received your details and will be in touch soon.</p></div>
+<p>Prefer email? Reach us directly at <a href="mailto:hello@wholefamilycollective.org">hello@wholefamilycollective.org</a>.</p>
+<p class="legal">Privacy: We collect and use the personal information you provide through this form to respond to your enquiry and for related legitimate purposes. We handle personal data in accordance with the Kenya Data Protection Act, 2019 and applicable data protection regulations. You have rights in relation to your personal data, including rights to access, correction, and objection to certain processing.</p></div>
 </div></section>
-<section class="b clay"><div class="w"><p class="note">Our Values</p>
-<div class="cols">
-<div><h3>Integrity</h3><p>We're radically honest, honor our commitments, and admit mistakes quickly.</p></div>
-<div><h3>Dignity &amp; Agency</h3><p>We design alongside caregivers and communities, share ownership, and respect local expertise.</p></div>
-<div><h3>Rigor</h3><p>We measure what matters, test assumptions, and change course when the evidence changes.</p></div>
-<div><h3>Courage</h3><p>We choose the harder right over the easier wrong, and don't shy away from difficult problems, decisions, or conversations.</p></div>
-<div><h3>Humility</h3><p>We stay curious, seek feedback early, and recognize there's something to learn from everyone.</p></div>
-<div><h3>Collaboration</h3><p>We share knowledge generously, partner openly, and leave every system stronger than we found it.</p></div>
-</div></div></section>
-<section class="b dark"><div class="w"><h2>Families can't flourish alone. Neither can we.</h2><p>If you share our conviction that families deserve better, let’s build together.</p><a class="btn" href="../contact/">Get in Touch</a></div></section>
 </main>
 
 <footer><div class="w">
@@ -56,6 +54,7 @@
 <script>
 var nl=document.getElementById("nl"),mb=document.getElementById("mb");
 mb.addEventListener("click",function(){var o=nl.classList.toggle("open");mb.setAttribute("aria-expanded",o)});
+if(/[?&]sent=true/.test(location.search)){document.getElementById("fb").hidden=true;document.getElementById("ty").hidden=false}
 </script>
 </body>
 </html>
