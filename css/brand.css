@@ -120,13 +120,13 @@ form.sub .btn{border-radius:12px;padding:.65rem 1.2rem;font-size:.95rem;white-sp
 .fr .subscribe{margin:0}.fr .subscribe .legal{max-width:none}
 @media(min-width:52rem){.ftop{grid-template-columns:1fr minmax(0,26rem);gap:3rem;align-items:start}}
 .fl>p.ftag{font-size:.8rem}
-/* volunteers: a smaller, secondary team section, photo matches the text height */
+/* volunteers: a smaller, secondary team section; name and title on top, photo level with the text below */
 .advisors h2{font-size:clamp(1.5rem,3.6vw,2rem)}
-.bio.sm{border:2px solid var(--line);border-radius:20px;background:rgba(255,255,255,.5);padding:1.5rem;gap:1.5rem;align-items:stretch}
+.bio.sm{border:2px solid var(--line);border-radius:20px;background:rgba(255,255,255,.22);padding:1.5rem;gap:1.25rem 2rem;align-items:stretch}
+.bio.sm .vh{grid-column:1/-1}
 .bio.sm h3{margin:0 0 .25rem}
-.bio.sm .note{font-size:1rem;margin-bottom:1rem}
+.bio.sm .note{font-size:1rem;margin:0}
 .bio.sm p{font-size:.95rem}
-.bio.sm .pic,.bio.sm .ph{height:100%}
 .bio.sm .ph{aspect-ratio:1/1.15;border-radius:14px}
 .bio.sm .ph img{object-position:50% 14%}
-@media(min-width:52rem){.bio.sm{grid-template-columns:13rem 1fr;gap:2rem;padding:1.75rem}.bio.sm .ph{aspect-ratio:auto;min-height:100%}.bio.sm .pic{position:relative}.bio.sm .ph{position:absolute;inset:0}}
+@media(min-width:52rem){.bio.sm{grid-template-columns:13rem 1fr;padding:1.75rem}.bio.sm .pic{position:relative}.bio.sm .ph{aspect-ratio:auto;position:absolute;inset:0}}
