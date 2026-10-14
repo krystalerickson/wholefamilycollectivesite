@@ -130,3 +130,8 @@ form.sub .btn{border-radius:12px;padding:.65rem 1.2rem;font-size:.95rem;white-sp
 .bio.sm .ph{aspect-ratio:1/1.15;border-radius:14px}
 .bio.sm .ph img{object-position:50% 14%}
 @media(min-width:52rem){.bio.sm{grid-template-columns:13rem 1fr;padding:1.75rem}.bio.sm .pic{position:relative}.bio.sm .ph{aspect-ratio:auto;position:absolute;inset:0}}
+/* donate */
+nav a.cta.give{background:var(--gold);color:var(--navy)}nav a.cta.give:hover{background:var(--navy);color:#fff}
+.btn.alt{background:transparent;border:2px solid currentColor;color:#fff;margin-left:.5rem}.btn.alt:hover{background:#fff;color:var(--navy)}
+.cols.c3{grid-template-columns:1fr}@media(min-width:52rem){.cols.c3{grid-template-columns:repeat(3,1fr)}}
+.dark .card a{color:var(--navy)}
